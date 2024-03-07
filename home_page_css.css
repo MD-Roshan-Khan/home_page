@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+header {
+    padding: 40px;
+    background-color: purple;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    
+}
+.hover:hover{
+    background-color: #484646 ;
+}
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: 14px 20px;
+    text-align: center;
+    float: left;
+    color: white;
+    
+}
+
+main {
+    background-color: white;
+    text-align: center;
+}
+
+h2 {
+    padding: 40px;
+}
+
+section:nth-child(even) {
+    background-color: rgb(241, 241, 241);
+}
+
+section {
+    min-height: 40vh;
+    padding: 50 px 0px;
+    height: 100%;
+}
+
+video {
+    padding: 10px;
+}
+
+
+.photo {
+    width: 360px;
+    border-radius: 80%;
+}
+
+section h5 {
+    margin: 40px;
+    
+}
+
+footer {
+    background-color: #333;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+
+section h2 span{
+    background: rgb(233,237,17);
+    background: linear-gradient(90deg, rgba(233,237,17,1) 0%, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 93%);
+    border-radius: 20px;
+    padding: 4px 12px;
+    color: white;
+    
+}
+
+.carousel-cell {
+  width: 66%;
+  margin-right: 10px;
+  border-radius: 5px;
+  
+}
+.carousel-cell video{
+    max-width: 90%;
+
+    
+}
+.iframe-container {
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 */
+    position: relative;
+    width: 80%;
+  } 
+  
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .name_style{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 20px;
+    text-transform: uppercase;
+    margin: 20px 0px 30px 0px;
+  }
+  .links a{
+    text-decoration: none;
+    background-color: lightgrey;
+    border-radius: 30%;
+    padding: 10px 15px;
+
+  } 
+  i{
+    margin: 5px;
+  }
+  .links a:hover{
+    background-color: rgb(193, 189, 189);
+  }
+
+
+
+.right_side_login{
+    margin-left: auto;
+}
+@media  screen and (max-width:600px) {
+    nav{
+        flex-direction: column;
+        padding: 20px 0px;
+    }
+    .right_side_login{
+        margin-left: 0;
+    }
+}
